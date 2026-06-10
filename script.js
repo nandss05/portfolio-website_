@@ -1,9 +1,9 @@
 console.log("Script loaded successfully!");
 
-//Navigation Bar
-const currentPage = window.location.pathname.split("/").pop();
+// Navigation Bar - Active Link
+const currentPage = window.location.pathname.split("/").pop() || "index.html";
 const navLinks = document.querySelectorAll(".nav-links a");
-navLinks.forEach(link => { 
+navLinks.forEach(link => {
     const linkPage = link.getAttribute("href").replace("./", "");
     if (currentPage === linkPage) {
         link.classList.add("active");
@@ -42,4 +42,10 @@ function filterProjects(category) {
             project.style.display = "none";
         }
     });
+
+    // Update active button
+    document.querySelectorAll(".project-filters button").forEach(btn => {
+        btn.classList.remove("active");
+    });
+    event.target.classList.add("active");
 }
