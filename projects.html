@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="This is a simple portfolio website." />
+    <title>Projects</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="../js/script.js" defer></script>
+</head>
+<body>
+    <div class="container">
+    <header>
+    <nav>
+        <div class="Logo">
+            <img src="../images/logo.png" alt="Logo" class="Logo">
+        </div>
+        <ul class="nav-links">
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./about.html">About</a></li>
+            <li><a href="./projects.html">Projects</a></li>
+            <li><a href="./contact.html">Contact</a></li>
+        </ul>
+    </nav>
+    </header>
+    <main>
+        <section class="projects-top">
+            <!--TOP AREA-->
+            <div class="projects-intro">
+                 <h1>PROJECTS</h1>
+                 <p>Here are some of my recent projects:</p>
+            </div>
+            <div class="sort-section">
+             ↓SORT BY
+            </div>
+            </div>
+                 <!--FILTER BUTTONS-->
+            <div class="project-filters">
+                <button class="active" onclick="filterProjects('all')">ALL</button>
+                <button onclick="filterProjects('design')">DESIGN</button>
+                <button onclick="filterProjects('development')">DEVELOPMENT</button>
+                <button onclick="filterProjects('animation')">ANIMATION</button>
+                <button onclick="filterProjects('branding')">BRANDING</button>
+            </div>
+            <!--PROJECT GRID-->
+            <div class="project-grid">
+                
+                <!--CARD 1-->
+                <div class="project-card design">
+                    <div class="project-image">
+                        IMAGE OF PROJECT
+                     </div>
+                       <h2>Project Title</h2>
+                        <p>Project description goes here.</p>
+
+                          <a href="#">MORE</a>
+                </div>
+
+                <!--CARD 2-->
+                <div class="project-card design">
+                     <div class="project-image">
+                            IMAGE OF PROJECT  
+                     </div>  
+                        <h2>Project Title</h2>
+                          <p>Project description goes here.</p>
+                            <a href="#">MORE</a>
+                </div>
+
+               <!--CARD 3-->
+                <div class="project-card development">
+                      <div class="project-image">
+                             IMAGE OF PROJECT    
+                      </div>
+                         <h2>Project Title</h2>
+                           <p>Project description goes here.</p>
+                                <a href="#">MORE</a> 
+                </div>
+
+                <!--CARD 4-->
+                <div class="project-card animation">
+                    <div class="project-image">
+                        IMAGE OF PROJECT    
+                    </div>
+                    <h2>Project Title</h2>
+                    <p>Project description goes here.</p>
+                    <a href="#">MORE</a>
+                </div>
+                
+                <!--CARD 5-->
+                <div class="project-card branding">
+                    <div class="project-image">
+                        IMAGE OF PROJECT    
+                    </div>
+                    <h2>Project Title</h2>
+                    <p>Project description goes here.</p>
+                    <a href="#">MORE</a>
+                </div>
+
+                 <!--CARD 6-->
+                <div class="project-card design">
+                     <div class="project-image">
+                    IMAGE OF PROJECT    
+                </div>
+                <h2>Project Title</h2>
+                <p>Project description goes here.</p>
+                <a href="#">MORE</a>
+                </div>
+
+                <!--CARD 7-->
+                <div class="project-card animation">
+                    <div class="project-image">
+                        IMAGE OF PROJECT    
+                    </div>
+                    <h2>Project Title</h2>
+                    <p>Project description goes here.</p>
+                    <a href="#">MORE</a>
+                </div>
+
+                <!--CARD 8-->
+                <div class="project-card animation">
+                    <div class="project-image">
+                        IMAGE OF PROJECT
+                    </div>
+                    <h2>Project Title</h2>
+                    <p>Project description goes here.</p>
+                    <a href="#">MORE</a>
+                </div>
+
+                <!--LOAD MORE BUTTON-->
+             <div class="load-more">
+                <button>LOAD MORE</button>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <button id="topButton"> ↑ Back to Top</button>
+        <p>&copy; <time datetime="2026-06-10">10 June 2026</time> My Portfolio. All rights reserved.</p>
+    </footer>
+</body>
+</html>
